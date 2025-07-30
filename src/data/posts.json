@@ -1,0 +1,178 @@
+[
+  {
+    "id": "5",
+    "author": {
+      "username": "react-vite",
+      "avatar": "https://i.pravatar.cc/150?img=32"
+    },
+    "body": "<h1>React + Vite</h1>\n<p>This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.</p>\n<p>Currently, two official plugins are available:</p>\n<ul>\n<li><a href=\"https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react\">@vitejs/plugin-react</a> uses <a href=\"https://babeljs.io/\">Babel</a> for Fast Refresh</li>\n<li><a href=\"https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc\">@vitejs/plugin-react-swc</a> uses <a href=\"https://swc.rs/\">SWC</a> for Fast Refresh</li>\n</ul>\n<h2>Expanding the ESLint configuration</h2>\n<p>If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the <a href=\"https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts\">TS template</a> for information on how to integrate TypeScript and <a href=\"https://typescript-eslint.io\">typescript-eslint</a> in your project.</p>",
+    "date_created": "2025-05-23T06:00:00.000Z",
+    "date_edited": null,
+    "tags": [
+      "this is just an example of the different styles you can add with the editor",
+      "like links, headings, code spans, etc...",
+      "tailwind's typography plugin makes everything look great 🤓"
+    ],
+    "notes": 1
+  },
+  {
+    "id": "6",
+    "author": {
+      "username": "everyday-cutephoto",
+      "avatar": "https://64.media.tumblr.com/c38d64b0f213c9e89d70a43dee7bf008/736bd7ab5a39fd74-83/s96x96u_c1/81c2dc06ae5f4d6325b98a4bec3d02300822b4e8.png"
+    },
+    "body": "<img src=\"https://64.media.tumblr.com/5bb028f1a7f308a3ba0d5a13d05a3fb3/505e97cc558b514f-db/s1280x1920/a255b8b0e4f08ca72b1e7c53bbfee3c73ba73cb4.jpg\" alt=\"cat1\"><img src=\"https://64.media.tumblr.com/4eeb3f75526c9c6e9045413ac9505afe/505e97cc558b514f-35/s1280x1920/c2231d6d102644951542ed2503e471aa01644611.jpg\" alt=\"cat2\"><p>What do you think he's planning?</p>",
+    "date_created": "2025-06-18T06:00:00.000Z",
+    "date_edited": null,
+    "tags": ["omggg", "this is quite possibly the cutest cat i've ever seen!!", "animals", "cat"],
+    "notes": 36
+  },
+  {
+    "id": "cd92deba-3e4d-4fe9-bdb4-8071deb84522",
+    "author": {
+      "username": "code-nerd",
+      "avatar": "https://preview.redd.it/whats-your-opinion-on-the-nerd-emoji-meme-v0-8n14e28ef25c1.png?auto=webp&s=1096919af213884f0185518d05df4ad548c1ebfa"
+    },
+    "body": "<h2>Code Snippets</h2><p>With the post editor, you can add code blocks with syntax highlighting 🤓☝️</p><p>Let's look at some examples:</p><ol><li><p><strong>JAVASCRIPT</strong></p><pre class=\"hljs\"><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> a = <span class=\"hljs-number\">5</span>\n<span class=\"hljs-keyword\">const</span> b = <span class=\"hljs-number\">3</span>\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(a + b) <span class=\"hljs-comment\">//output: 8</span></code></pre></li><li><p><strong>CSS</strong></p><pre class=\"hljs\"><code class=\"hljs language-css\"><span class=\"hljs-selector-class\">.hljs</span>{\n  <span class=\"hljs-attribute\">display</span>: flex;\n  <span class=\"hljs-attribute\">padding</span>: <span class=\"hljs-number\">0px</span> <span class=\"hljs-number\">20px</span>;\n  <span class=\"hljs-attribute\">flex-direction</span>: row;\n}</code></pre></li><li><p><strong>PYTHON</strong></p><pre class=\"hljs\"><code class=\"hljs language-python\">my_array = [<span class=\"hljs-string\">'banana'</span>, <span class=\"hljs-string\">'apple'</span>, <span class=\"hljs-string\">'cherry'</span>]\n<span class=\"hljs-keyword\">for</span> item <span class=\"hljs-keyword\">in</span> my_array:\n  <span class=\"hljs-built_in\">print</span>(item + <span class=\"hljs-string\">' pie!'</span>) <span class=\"hljs-comment\"># example output: \"banana pie!\"</span></code></pre></li></ol><p><strong>PRO TIP:</strong> You can specify the coding language by typing three backticks followed by the name of the language, like this: <code>```python</code> or <code>```markdown</code></p>",
+    "tags": ["code", "tutorial", "editor"],
+    "date_edited": "2025-07-23T18:46:24.091Z",
+    "date_created": "2025-07-07T20:07:53.112Z",
+    "notes": 10
+  },
+  {
+    "id": "21a3167a-51d2-4d39-96fa-778ecd6be6fe",
+    "author": {
+      "username": "papasrats",
+      "avatar": "https://pbs.twimg.com/media/GwaVM2CW8AAtwbf?format=jpg&name=large"
+    },
+    "body": "<p>the way i can't stop listening to this I AM OBSESSED !!</p><div data-embed-type=\"spotify\" class=\"custom-embed-wrapper mt-4 w-full min-h-fit\"><iframe src=\"https://open.spotify.com/embed/track/0hw2CGX8jaIpS4jGDn3dfa\" width=\"100%\" height=\"152\" frameborder=\"0\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" allowfullscreen=\"true\" loading=\"lazy\" class=\"rounded-2xl overflow-hidden min-h-[152px]\"></iframe></div><img src=\"https://gifdb.com/images/high/metal-concert-party-headbang-snzn1huy5r30xjwq.gif\" alt=\"Metal Concert Party Headbang GIF | GIFDB.com\">",
+    "tags": [
+      "grrr i can't wait to see them liveeee",
+      "the band ghost",
+      "skeletour",
+      "lachryma",
+      "audio",
+      "spotify"
+    ],
+    "date_created": "2025-07-23T19:08:19.782Z",
+    "notes": 17,
+    "date_edited": "2025-07-29T19:14:39.955Z"
+  },
+  {
+    "id": "70c71ba3-740b-4052-adac-25aa355512fb",
+    "author": {
+      "username": "thesquiggler",
+      "avatar": "https://external-preview.redd.it/gCFhxv5PcGZsEkst1p4OZK1ftRHuBdGHDNC6-AUoAMk.jpg?width=640&crop=smart&auto=webp&s=7f599b3b9b620156aa4f3ca0686fa6a75340cd81"
+    },
+    "body": "<p>jokes to make after failure that aren’t self-deprecating:</p><ol><li><p>I’m the best to ever do it</p></li><li><p>Nobody saw that (best if said loudly)</p></li><li><p>No one’s ever done it like me</p></li><li><p>I could be President/they should make me President</p></li><li><p>Behold, a mere fraction of my power!</p></li><li><p>The public wants to be me soooooo bad</p></li><li><p>I’m an expert in (thing you just failed at)</p></li><li><p>How could this have happened to god’s favorite princess?</p></li><li><p>Nothing ibuprofen and a glass of water cant fix</p></li><li><p>I’m being sabotaged</p></li></ol>",
+    "tags": ["text", "funny", "og post by @absolutegibberishandnumbers on tumblr"],
+    "date_edited": "2025-07-23T19:35:35.313Z",
+    "date_created": "2025-07-23T19:33:55.883Z",
+    "notes": 14
+  },
+  {
+    "id": "b65643f0-869e-40a3-a251-3a812b64fbc8",
+    "author": {
+      "username": "yoshikaru",
+      "avatar": "https://pbs.twimg.com/media/GwKsLGKXkAAryHX?format=jpg&name=large"
+    },
+    "body": "<p>I don't want my cellphone to have AI I want it to have 3 days of battery time. I don't want my computer to have AI preinstalled I want it to have seven usb ports and high ram at affordable price. I don't want my games to have AI built levels I want them to be so optimized I could run them on a nokia.</p>",
+    "tags": [
+      "god... so real",
+      "text",
+      "# og post by @curoopeez on tumblr",
+      "yes i've been taking some tumblr post and putting them here to fill up the feed a little",
+      "look awaaaay!! don't judge meee!!!"
+    ],
+    "date_created": "2025-07-23T19:50:36.551Z",
+    "notes": 3
+  },
+  {
+    "id": "331b4570-2ea8-4162-ae58-f6b88039328b",
+    "author": {
+      "username": "superseniors-fan",
+      "avatar": "https://i.pinimg.com/1200x/01/ab/eb/01abebeca9f463c0310d4ac81e292374.jpg"
+    },
+    "body": "<p></p><iframe src=\"https://www.youtube-nocookie.com/embed/hF8RKhGFO6g\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" frameborder=\"0\" loading=\"lazy\" width=\"100%\" class=\"aspect-video rounded-xl\" style=\"width: 100%; max-height: 230px; border-radius: 12px; aspect-ratio: 16 / 9;\"></iframe><p>oh ryeowook... the VOCALIST that you are. the SINGER that you are. his voice is actually soooo underrated like, he's one of the best easily</p>",
+    "tags": ["ryeowook", "superjunior", "kpop", "golden kdh", "youtube"],
+    "date_edited": "2025-07-30T20:09:21.513Z",
+    "date_created": "2025-07-25T01:55:31.493Z",
+    "notes": 11
+  },
+  {
+    "id": "95ce326b-6bf2-4cb3-87cf-c01de2a30304",
+    "author": {
+      "username": "meaffrr",
+      "avatar": "https://content.imageresizer.com/images/memes/Sad-Megamind-meme-64ll02.jpg"
+    },
+    "body": "<p>actual footage of me finishing up this project</p><img src=\"https://media1.tenor.com/m/AGgVj_aylZUAAAAd/coraline-dad.gif\" alt=\"a cartoon character wearing a michigan state sweatshirt sits in front of a computer\">",
+    "tags": [
+      "look i'm so happy with the results....",
+      "but i feel this took to long i just don't want to look at it anymore lol",
+      "i'm so tired 😭"
+    ],
+    "date_edited": null,
+    "date_created": "2025-07-30T20:48:09.220Z",
+    "notes": 6
+  },
+  {
+    "id": "54b55294-4142-419b-8130-779aae13e692",
+    "author": {
+      "username": "perdidoman",
+      "avatar": "https://i.pinimg.com/1200x/04/f8/3d/04f83d36e4b5e863435844c6a2c1eaa3.jpg"
+    },
+    "body": "<p>Newtons 4th law is that for every \"it's so over\" there's an equal and opposite \"we're so back\"</p>",
+    "tags": ["text", "xddd", "og post by @freakoutgirl on tumblr"],
+    "date_edited": null,
+    "date_created": "2025-07-30T21:36:18.632Z",
+    "notes": 21
+  },
+  {
+    "id": "9cb3f605-418d-415c-8a92-f66533e52e62",
+    "author": {
+      "username": "winter-heat",
+      "avatar": "https://i.pinimg.com/736x/3b/d2/05/3bd2050418d85ceceebdf673f94502e0.jpg"
+    },
+    "body": "<p>“available with premium subscription”&nbsp;“will be removed on the 31st”&nbsp;“available free with ads”&nbsp;“rent 4.99 buy 20.00″&nbsp;“not available in your country”&nbsp;“not available on this device” what if every streaming service fucking killed itself and films ran around their fields free and organic in their natural state</p>",
+    "tags": ["text", "lmaoo", "og post by @tomcriuse on tumblr"],
+    "date_edited": null,
+    "date_created": "2025-07-30T21:42:05.027Z",
+    "notes": 8
+  },
+  {
+    "id": "f1844457-a61f-487d-86b9-d580e86cda46",
+    "author": {
+      "username": "delta-slim",
+      "avatar": "https://i.pinimg.com/736x/e9/c8/44/e9c844773f88118607e0903cbf6ec7bf.jpg"
+    },
+    "body": "<p>y'all have to stop whatever it is you're doing right now and whatch sinners. I'M NOT ASKING, THIS IS AN ORDER !! i haven't been able to stop thinking about THAT one scene from the movie omgggg i was LEVITATING IN THE THEATER. whatch it frrr it's soo fun and the soundtrack <strong><em>EATS</em></strong></p><div data-embed-type=\"spotify\" class=\"custom-embed-wrapper mt-4 w-full min-h-fit\"><iframe src=\"https://open.spotify.com/embed/track/3gpofCUBcNhtLy2mN0ioE5\" width=\"100%\" height=\"152\" frameborder=\"0\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" allowfullscreen=\"true\" loading=\"lazy\" class=\"rounded-2xl overflow-hidden min-h-[152px]\" style=\"border-radius: 12px; overflow: hidden;\"></iframe></div><img src=\"https://i.pinimg.com/736x/6b/11/84/6b11842c2a59b7032da09857049cfa3b.jpg\">",
+    "tags": ["like are you LISTENING TO THIIIIS GOD", "i LOOOOVED the songs", "movies", "sinners"],
+    "date_edited": null,
+    "date_created": "2025-07-30T21:49:12.989Z",
+    "notes": 16
+  },
+  {
+    "id": "2d455879-f17c-46b1-9736-e0ff380041fa",
+    "author": {
+      "username": "exocreamsodaa",
+      "avatar": "https://i.pinimg.com/736x/53/02/4e/53024ef118565094b243faa722e7337c.jpg"
+    },
+    "body": "<h3>top fav animals in no order</h3><ol><li><p>beer</p><img src=\"https://i.pinimg.com/736x/38/d2/82/38d282e8b5a8558e170851af80fde32a.jpg\"></li><li><p>ephelant</p><img src=\"https://i.pinimg.com/736x/c6/0e/5b/c60e5b42a11b153141b1d5137b62b5ba.jpg\"></li><li><p>doug</p><img src=\"https://i.pinimg.com/736x/d9/b2/b4/d9b2b489cc0d1c80288d1779fe81f07e.jpg\"></li><li><p>my sister</p><img src=\"https://i.pinimg.com/736x/3d/d5/4f/3dd54f21ac56490ff0445713bc29ec0c.jpg\"></li></ol>",
+    "tags": ["animals", "what am i even doing lmao"],
+    "date_edited": null,
+    "date_created": "2025-07-30T22:02:55.494Z",
+    "notes": 19
+  },
+  {
+    "id": "5d4f8b10-9540-49e1-ba2e-2431f0d63f5c",
+    "author": {
+      "username": "perpysumbra",
+      "avatar": "https://i.pinimg.com/736x/b2/d8/6a/b2d86a1904b96e80e950042df2cd2d6e.jpg"
+    },
+    "body": "<p>EVERYONE LISTEN TO THIS SONG RIGHT NOOOOW. THIS IS AN ORDEEER 🔫🔫</p><div data-embed-type=\"soundcloud\" class=\"custom-embed-wrapper mt-4 w-full min-h-fit aspect-video max-h-[300px]\" style=\"position: relative; padding-top: 56.25%; overflow: hidden;\"><iframe src=\"https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fsduwa9iranb8%2Fexo-sweet-lies%3Fsi%3D7de7156c501a46b69066248770c32e0d%26utm_source%3Dclipboard%26utm_medium%3Dtext%26utm_campaign%3Dsocial_sharing&amp;visual=true&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" class=\"w-full h-full\" style=\"position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none;\"></iframe></div>",
+    "tags": ["idc idc listen to iiiit", "it's good !!!", "exo", "soundcloud", "audio"],
+    "date_edited": "2025-07-30T22:08:31.770Z",
+    "date_created": "2025-07-30T22:06:43.299Z",
+    "notes": 5
+  }
+]
