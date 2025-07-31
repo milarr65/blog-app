@@ -51,7 +51,8 @@ The post editor supports rich text editing (bold, italics, code blocks, quotes, 
 > **_You can only upload media via URL_**
 
 <details>
-<sumary><h2>Screenshots</h2></sumary>
+<summary><strong>Screenshots</strong></summary>
+<br />
 
 ![screenshot 1](public/Captura%20de%20pantalla%202025-07-30%20161340.png)
 ![screenshot 2](public/Captura%20de%20pantalla%202025-07-30%20161414.png)
@@ -82,19 +83,19 @@ Follow these steps to run the project locally:
    Use Git to clone the repo to your local machine:
 
    ```bash
-     git clone https://github.com/milaar65/blog-app.git
-     cd blog-app
+    git clone https://github.com/milaar65/blog-app.git
+    cd blog-app
    ```
 
 2. **Install dependencies**  
    Install all required packages. You can use either pnpm (recommended) or npm:
    ```bash
-     pnpm install # or npm install
+    pnpm install # or npm install
    ```
 3. **Start the development server**  
    Once the dependencies are installed, run the dev server with:
    ```bash
-     pnpm dev # or npm run dev
+    pnpm dev # or npm run dev
    ```
 4. **Open the app in your browser**  
    By default, Vite serves your app at http://localhost:5173. You can open this link in your browser to view the app.
