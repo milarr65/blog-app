@@ -19,7 +19,7 @@ export default function AboutModal() {
             href="https://daisyui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent"
+            className="hover:text-info"
           >
             DaisyUi
           </a>{' '}
@@ -33,7 +33,7 @@ export default function AboutModal() {
             href="https://tiptap.dev/docs"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent"
+            className="hover:text-info"
           >
             TipTap
           </a>{' '}
@@ -80,6 +80,13 @@ export default function AboutModal() {
           Since I'm not using any sort of database, I have nowhere to store user's local files.{' '}
           <em>You can only upload media via URL.</em>
         </div>
+
+        <p>
+          You can check out the this site's github repo{' '}
+          <a href="https://github.com/milaar65/blog-app" className="hover:text-info">
+            here.
+          </a>
+        </p>
 
         <div className="modal-action">
           <form method="dialog" className="">

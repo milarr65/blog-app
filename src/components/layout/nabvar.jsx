@@ -1,10 +1,9 @@
 import ThemeController from './theme-controller'
 import NavbarMenu from './NavbarMenu'
 import { Link } from 'react-router'
-import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPalette } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   return (
@@ -14,7 +13,7 @@ export default function Navbar() {
           <Link to="/" className="btn btn-ghost text-xl font-bold">
             BlogUi
           </Link>
-          <div className="sm:hidden">
+          <div className="flex flex-row flex-nowrap gap-3 sm:hidden">
             <div className="dropdown dropdown-bottom dropdown-center">
               <div
                 tabIndex={0}
@@ -30,6 +29,15 @@ export default function Navbar() {
               >
                 <ThemeController />
               </div>
+            </div>
+            <div>
+              <button
+                className="btn btn-ghost tooltip tooltip-bottom"
+                data-tip="About"
+                onClick={() => document.getElementById('about-modal').showModal()}
+              >
+                <FontAwesomeIcon icon={faInfoCircle} className="fill-current text-xl" />
+              </button>
             </div>
           </div>
           <div className="hidden sm:block">
