@@ -1,5 +1,4 @@
-// CustomEmbed.js
-import { Node, mergeAttributes, PasteRule } from '@tiptap/core'
+import { Node, mergeAttributes } from '@tiptap/core'
 import { Plugin, PluginKey } from '@tiptap/pm/state'
 
 export const CustomEmbed = Node.create({
@@ -13,7 +12,7 @@ export const CustomEmbed = Node.create({
 
   addAttributes() {
     return {
-      type: { default: null }, // e.g., 'spotify', 'soundcloud', 'gif'
+      type: { default: null },
       src: { default: null },
       style: {
         default: null,
@@ -69,12 +68,10 @@ export const CustomEmbed = Node.create({
     }
 
     if (type === 'soundcloud') {
-      // SoundCloud “visual=true” embed
-      // + extra parameters for dark theme, hide related, etc.
       const url = new URL(src)
-      // ensure visual=true in case your handler didn't add it yet
-      url.searchParams.set('visual', 'true')
-      url.searchParams.set('color', '#ff5500')
+      
+      url.searchParams.set('visual', 'true')    // this is to make the embed more stylish
+      url.searchParams.set('color', '#ff5500')  // soundcloud's default color
       url.searchParams.set('inverse', 'false')
       url.searchParams.set('auto_play', 'false')
       url.searchParams.set('hide_related', 'false')
@@ -95,33 +92,12 @@ export const CustomEmbed = Node.create({
             scrolling: 'no',
             frameborder: 'no',
             allow: 'autoplay',
-            // full bleed inside the wrapper
             style: 'position: absolute; top:0; left:0; width:100%; height:100%; border:none;',
             class: 'w-full h-full',
           },
         ],
       ]
     }
-
-    // if (type === 'spotify' || type === 'soundcloud') {
-    //   return [
-    //     'div',
-    //     mergeAttributes(baseAttrs),
-    //     [
-    //       'iframe',
-    //       {
-    //         src,
-    //         frameborder: 0,
-    //         allow: 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture',
-    //         allowfullscreen: 'true',
-    //         width: '100%',
-    //         height: '152',
-    //         datatestid: 'embed-iframe',
-    //         style: 'display:block; max-width:100%; border:none; border-radius: 13px;',
-    //       },
-    //     ],
-    //   ]
-    // }
 
     if (type === 'gif') {
       return ['div', mergeAttributes(baseAttrs), ['img', { src, class: 'rounded' }]]
@@ -191,53 +167,4 @@ export const CustomEmbed = Node.create({
       }),
     ]
   },
-
-  //   addPasteRules() {
-  //     return [
-  //       new PasteRule({
-  //         find: /(https?:\/\/[^\s]+)/g,
-  //         handler: ({ match, chain }) => {
-  //           const url = match[0]
-
-  //           if (url.includes('open.spotify.com')) {
-  //             const pathname = new URL(url).pathname.replace(/^\/intl-[^/]+/, '')
-
-  //             return chain()
-  //               .insertContent({
-  //                 type: 'customEmbed',
-  //                 attrs: {
-  //                   type: 'spotify',
-  //                   src: `https://open.spotify.com/embed${pathname}`,
-  //                 },
-  //               })
-  //               .run()
-  //           }
-
-  //           if (url.includes('soundcloud.com')) {
-  //             return chain()
-  //               .insertContent({
-  //                 type: 'customEmbed',
-  //                 attrs: {
-  //                   type: 'soundcloud',
-  //                   src: `https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}`,
-  //                 },
-  //               })
-  //               .run()
-  //           }
-
-  //           if (url.match(/\.(gif)(\?.*)?$/i)) {
-  //             return chain()
-  //               .insertContent({
-  //                 type: 'customEmbed',
-  //                 attrs: {
-  //                   type: 'gif',
-  //                   src: url,
-  //                 },
-  //               })
-  //               .run()
-  //           }
-  //         },
-  //       }),
-  //     ]
-  //   },
 })

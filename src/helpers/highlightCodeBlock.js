@@ -1,4 +1,4 @@
-import { common, createLowlight } from 'lowlight' // your existing instance
+import { common, createLowlight } from 'lowlight'
 import { toHtml } from 'hast-util-to-html'
 import { fromHtml } from 'hast-util-from-html'
 
@@ -31,7 +31,7 @@ function walk(node) {
       }
     }
 
-    // 🔁 Recursively process all children
+    // Recursively process all children
     walk(child)
   }
 }
