@@ -83,7 +83,7 @@ export default function AboutModal() {
 
         <p>
           You can check out the this site's github repo{' '}
-          <a href="https://github.com/milaar65/blog-app" className="hover:text-info">
+          <a href="https://github.com/milarr65/blog-app" className="hover:text-info">
             here.
           </a>
         </p>
