@@ -27,14 +27,16 @@ export default function Alert({ message, type, onClose }) {
     }
   }, [message, type, onClose])
 
+
+  const alertClass = `alert alert-${type} fixed top-5 right-5 z-50 transition-transform duration-500 ease-in-out ${isVisible ? 'translate-x-0' : 'translate-x-[150%]'}`
+
   return (
-    <div
-      role="alert"
-      className={`alert alert-${type} alert-horizontal fixed top-5 right-5 z-50 transition-transform duration-500 ease-in-out ${isVisible ? 'translate-x-0' : 'translate-x-[150%]'}`}
-      id="toast-success"
-    >
-      <CheckCircleIcon className="h-5 w-6 stroke-2 text-current" />
-      <span>{message}</span>
-    </div>
+    <>
+      
+      <div role="alert" className={alertClass} id="alert">
+        <CheckCircleIcon className="h-5 w-6 stroke-2 text-current" />
+        <span>{message}</span>
+      </div>
+    </>
   )
 }

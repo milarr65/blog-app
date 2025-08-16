@@ -10,14 +10,13 @@ export default function Home({ posts, onDelete, sortFilter, setFilter }) {
   const [layout, setLayout] = useState(localStorage.getItem('layout') || 'single')
 
   const [alert, setAlert] = useState({
-    message: 'Post deleted successfully!',
-    type: 'success',
+    message: '',
+    type: '',
     show: false,
   })
 
   function triggerAlert(message, type) {
     setAlert({ message, type, show: true })
-    console.log('alert', alert)
   }
 
   useEffect(() => {
@@ -54,10 +53,10 @@ export default function Home({ posts, onDelete, sortFilter, setFilter }) {
               <RectangleGroupIcon className="h-5 w-5 stroke-2 text-current" />
             </button>
           </div>
-          <div className="join join-horizontal">
+          <div className="join join-horizontal w-auto">
             <button className="join-item btn btn-sm btn-active btn-neutral">Sort By</button>
             <select
-              className="select select-sm join-item select-neutral max-w-fit"
+              className="select select-sm join-item select-neutral w-max"
               value={sortFilter}
               onChange={(e) => {
                 setFilter(e.target.value)
