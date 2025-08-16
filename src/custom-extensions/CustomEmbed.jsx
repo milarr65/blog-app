@@ -70,7 +70,7 @@ export const CustomEmbed = Node.create({
     if (type === 'soundcloud') {
       const url = new URL(src)
       
-      url.searchParams.set('visual', 'true')    // this is to make the embed more stylish
+      url.searchParams.set('visual', 'true')
       url.searchParams.set('color', '#ff5500')  // soundcloud's default color
       url.searchParams.set('inverse', 'false')
       url.searchParams.set('auto_play', 'false')
