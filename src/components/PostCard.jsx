@@ -35,7 +35,7 @@ export default function PostCard({ post, onDelete, onAlert }) {
             </p>
           </div>
         </div>
-        <div className="dropdown dropdown-bottom md:dropdown-center dropdown-end">
+        <div className="dropdown dropdown-bottom dropdown-end lg:dropdown-center">
           <div role="button" tabIndex={0} className="btn btn-circle btn-soft">
             <EllipsisHorizontalIcon className="h-9 w-9 fill-current stroke-2 opacity-85" />
           </div>

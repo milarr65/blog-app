@@ -8,40 +8,45 @@ export default function PostMenu({ date, post_id, onDelete, onAlert }) {
   const handleDelete = (e) => {
     e.preventDefault()
     onDelete(post_id)
-    onAlert?.('Post deleted successfully!', 'success')
+    onAlert('The post has been deleted!', 'success')
   }
   return (
     <>
-      <div className="menu dropdown-content join join-vertical w-max">
-        <button className="btn btn-soft hove join-item">{toFullDate(date)}</button>
-        <button
-          className="btn btn-soft join-item inline-flex justify-start"
-          onClick={() => navigate(`/edit/${post_id}`)}
-        >
-          <PencilSquareIcon className="h-4 w-4 stroke-2" />
-          Edit
-        </button>
-        <button
-          className="btn btn-soft join-item inline-flex justify-start"
-          onClick={() => document.getElementById(`deleteModal-${post_id}`).showModal()}
-        >
-          <TrashIcon className="h-4 w-4 stroke-2" />
-          Delete
-        </button>
+      <ul tabIndex={0} className="menu dropdown-content rounded-box bg-base-200 w-max shadow">
+        <li>
+          <a>{toFullDate(date)}</a>
+        </li>
+        <li onClick={() => navigate(`/edit/${post_id}`)}>
+          <a>
+            <PencilSquareIcon className="h-4 w-4 stroke-2" />
+            Edit
+          </a>
+        </li>
+        <li onClick={() => document.getElementById(`deleteModal-${post_id}`).showModal()}>
+          <a>
+            <TrashIcon className="h-4 w-4 stroke-2" />
+            Delete
+          </a>
+        </li>
 
-        <button className="btn btn-soft join-item inline-flex justify-start">
-          <NoSymbolIcon className="h-4 w-4 stroke-2" />
-          Block
-        </button>
-        <button className="btn btn-soft join-item inline-flex justify-start">
-          <FlagIcon className="h-4 w-4 stroke-2" />
-          Report
-        </button>
-      </div>
+        <li>
+          <a>
+            <NoSymbolIcon className="h-4 w-4 stroke-2" />
+            Block
+          </a>
+        </li>
+        <li>
+          <a>
+            <FlagIcon className="h-4 w-4 stroke-2" />
+            Report
+          </a>
+        </li>
+      </ul>
+
       <dialog id={`deleteModal-${post_id}`} className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
           <h3 className="text-lg font-bold">Delete</h3>
-          <p className="py-4">Are you sure you wan to delete this post?</p>
+          <p className="py-4">Are you sure you want to delete this post?</p>
           <div className="modal-action">
             <form method="dialog" className="grid grid-cols-2 gap-3">
               <button className="btn">Cancel</button>
