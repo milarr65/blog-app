@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin 'daisyui' {
@@ -5,7 +6,7 @@
 }
 
 :root {
-  font-family: Favorit, ui-sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Geist", ui-sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -53,7 +54,14 @@ div[aria-expanded='true'] > div[data-tippy-root=''] {
 
 pre.hljs {
   font-size: 0.95em !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Geist Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+code {
+  font-family: 'Geist Mono', monospace;
 }
 
 #post-content > div.prose.max-w-none.items-start a {
