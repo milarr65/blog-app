@@ -1,11 +1,10 @@
-
 export function formatDate(date) {
-  const dateIsCurrentYear = (new Date(date).getFullYear() === new Date().getFullYear())
+  const dateIsCurrentYear = new Date(date).getFullYear() === new Date().getFullYear()
 
   return new Intl.DateTimeFormat(undefined, {
     month: 'short',
     day: 'numeric',
-    year: dateIsCurrentYear ? undefined : "numeric",
+    year: dateIsCurrentYear ? undefined : 'numeric',
   }).format(new Date(date))
 }
 
@@ -21,22 +20,20 @@ export function toFullDate(date) {
 }
 
 export function scrollToTop() {
-  var rootElement = document.documentElement;
+  var rootElement = document.documentElement
 
   rootElement.scrollTo({
     top: 0,
     behavior: 'smooth',
-  });
+  })
 }
 
 export function capitalize(word) {
   if (typeof word !== 'string' || !word.length) {
-    return word;
+    return word
   }
-  const capitalized =
-    word.charAt(0).toUpperCase()
-    + word.slice(1)
-  return capitalized;
+  const capitalized = word.charAt(0).toUpperCase() + word.slice(1)
+  return capitalized
 }
 
 export function savePostToStorage(newPost) {
@@ -55,14 +52,14 @@ export function getSavedPosts() {
   const now = new Date()
   const stored = JSON.parse(localStorage.getItem('tempPosts') || '[]')
 
-  const validPosts = stored.filter(post => {
+  const validPosts = stored.filter((post) => {
     const created = new Date(post.date_created)
     const diffHours = (now - created) / (1000 * 60 * 60)
     return diffHours < 3 // or 3 if you want 3 hours
   })
 
   //Clear old posts
-  const filtered = stored.filter(post => {
+  const filtered = stored.filter((post) => {
     const created = new Date(post.date_created)
     return (now - created) / (1000 * 60 * 60) < 3
   })
@@ -70,7 +67,6 @@ export function getSavedPosts() {
   localStorage.setItem('tempPosts', JSON.stringify(filtered))
 
   return validPosts
-
 }
 
 export function saveLayout(layout) {

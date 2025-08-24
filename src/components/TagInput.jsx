@@ -42,12 +42,12 @@ export default function TagInput({ tags, setTags }) {
         >
           # {tag}
           <button type="button" onClick={() => deleteTag(idx)}>
-            <XMarkIcon className="hover:text-error h-4 w-4 cursor-pointer stroke-3 " />
+            <XMarkIcon className="hover:text-error h-4 w-4 cursor-pointer stroke-3" />
           </button>
         </span>
       ))}
       <input
-        name='tag'
+        name="tag"
         type="text"
         placeholder="Add some tags!"
         value={tagInput}

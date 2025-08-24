@@ -8,8 +8,6 @@ import DOMPurify from 'dompurify'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 import TagInput from './TagInput.jsx'
-import { extensions } from './tiptap-editor/TipTapEditor.jsx'
-import { generateHTML } from '@tiptap/html'
 import highlightCodeBlocks from '../helpers/highlightCodeBlock.js'
 import TableModal from './TableModal.jsx'
 

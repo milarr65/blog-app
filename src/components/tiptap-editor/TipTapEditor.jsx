@@ -118,7 +118,7 @@ export default function TipTapEditor({ editorRef }) {
     if (editor && editorRef) {
       editorRef.current = editor
     }
-  }, [editor])
+  }, [editor, editorRef])
 
   return (
     <>

@@ -20,7 +20,7 @@ export const CustomYoutube = Youtube.extend({
         allow: 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture',
         frameborder: '0',
         loading: 'lazy',
-        width: '100%', 
+        width: '100%',
         style: 'width:100%; max-height:230px; border-radius:12px; aspect-ratio:16/9;',
         class: 'aspect-video rounded-xl',
       },

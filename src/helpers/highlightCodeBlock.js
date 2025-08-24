@@ -10,15 +10,10 @@ function walk(node) {
 
   for (const child of node.children) {
     // If this is a <pre><code> block
-    if (
-      child.tagName === 'pre' &&
-      child.children?.[0]?.tagName === 'code'
-    ) {
+    if (child.tagName === 'pre' && child.children?.[0]?.tagName === 'code') {
       const codeNode = child.children[0]
       const classNames = codeNode.properties?.className || []
-      const langClass = classNames.find((cls) =>
-        cls.startsWith('language-')
-      )
+      const langClass = classNames.find((cls) => cls.startsWith('language-'))
       const language = langClass?.replace('language-', '') || 'plaintext'
       const codeText = codeNode.children?.[0]?.value || ''
 
