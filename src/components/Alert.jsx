@@ -1,16 +1,20 @@
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
 
+const alertClasses = {
+  success: 'alert-success',
+  error: 'alert-error',
+  warning: 'alert-warning',
+  info: 'alert-info',
+}
+
 export default function Alert({ message, type, onClose }) {
   const [isVisible, setisVisible] = useState(false)
 
-  if (!message || !type) {
-    return null
-  }
-
   useEffect(() => {
-    setisVisible(true)
+    if (!message || !type) return
 
+    setisVisible(true)
     // animation that last 4s
     const timer = setTimeout(() => {
       setisVisible(false)
@@ -27,12 +31,12 @@ export default function Alert({ message, type, onClose }) {
     }
   }, [message, type, onClose])
 
+  if (!message || !type) return null
+
+  const alertClass = `alert ${alertClasses[type]} fixed top-5 right-5 z-50 transition-transform duration-500 ease-in-out ${isVisible ? 'translate-x-0' : 'translate-x-[150%]'}`
+
   return (
-    <div
-      role="alert"
-      className={`alert alert-${type} alert-horizontal fixed top-5 right-5 z-50 transition-transform duration-500 ease-in-out ${isVisible ? 'translate-x-0' : 'translate-x-[150%]'}`}
-      id="toast-success"
-    >
+    <div role="alert" className={alertClass} id="alert">
       <CheckCircleIcon className="h-5 w-6 stroke-2 text-current" />
       <span>{message}</span>
     </div>
