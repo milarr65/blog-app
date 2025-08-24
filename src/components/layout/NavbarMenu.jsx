@@ -3,7 +3,7 @@ import { faComment, faBolt, faCompass, faUser } from '@fortawesome/free-solid-sv
 
 export default function NavbarMenu() {
   return (
-    <div className="flex flex-row flex-nowrap gap-3">
+    <div className="hidden flex-row flex-nowrap gap-3 sm:flex">
       <button className="btn btn-ghost btn-circle tooltip tooltip-bottom" data-tip={'Explore'}>
         <FontAwesomeIcon icon={faCompass} className="text-xl text-current" />
       </button>

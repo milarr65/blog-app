@@ -1,13 +1,16 @@
 import useTheme from '../../hooks/useTheme'
 import { capitalize } from '../../utils'
 
-const dark_themes = ['dracula', 'synthwave', 'abyss', 'night', , 'luxury']
+const dark_themes = ['dracula', 'synthwave', 'abyss', 'night', 'luxury']
 const light_themes = ['cupcake', 'valentine', 'caramellatte', 'nord', 'retro']
 
-export default function ThemeController() {
+export default function ThemeController({ className }) {
   const [theme, setTheme] = useTheme()
   return (
-    <>
+    <ul
+      tabIndex={0}
+      className={`dropdown-content menu rounded-box min-w-max p-2 shadow-2xl ${className}`}
+    >
       <li>
         <h2 className="menu-title">Dark</h2>
         <ul>
@@ -28,6 +31,6 @@ export default function ThemeController() {
           ))}
         </ul>
       </li>
-    </>
+    </ul>
   )
 }
