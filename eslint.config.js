@@ -18,6 +18,13 @@ export default defineConfig([
       reactRefresh: eslintPluginReactRefresh,
     },
     rules: {
+      'react/prop-types': 'off',
+      'react/no-unescaped-entities': 'off',
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-react': 'off',
+      'react/jsx-key': 'warn',
+      'react/jsx-no-duplicate-props': 'error',
+      'react/jsx-no-undef': 'error',
       'reactHooks/rules-of-hooks': 'error',
       'reactHooks/exhaustive-deps': 'warn',
       'no-unused-vars': 'warn',
